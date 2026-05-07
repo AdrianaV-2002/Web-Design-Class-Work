@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contact Information</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Information</h1>
+    </header>
+    
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <main id="main-content">
+        <h1>Contact</h1>
+        <div>
+            <form method="post" action="#" aria-label="Contact form" id="contactForm">
+            <fieldset>
+                    <legend>Your details</legend>
+                    <label for="name">Full name (required)</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email (required)</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone number (optional)</label>
+                    <input type="tel" id="phone" name="phone"> 
+                    <label for="dob">Date of birth (required)</label>
+                    <input type="date" id="dob" required>
+                    <label for="age">Your age (required)</label>
+                    <input type="number" min="18" max="60" id="age" required>
+                    <label for="favColor">Favorite color (reqired)</label>
+                    <input type="color" id="favColor" required value="#cccccc">
+
+            </fieldset>
+            <fieldset>
+                    <legend>Your message</legend>
+                    <label for="subject">Subject (required)</label>
+                    <input type="text" id="subject" name="subject" required aria-describedby="subject-hint">
+                    <p id="subject-hint" class="form-hint">e.g. Lab 2, schedule, grading</p>
+                    <label for="msg">Message (required)</label>
+                    <textarea id="msg" name="message" rows="5" required></textarea>
+                    <label for="website">Add URL for website (optional)</label>
+                    <input type="url" id="website">
+                    <label for="fileUpload">Upload a file (optional)</label>
+                    <input type="file" id="fileUpload" accept=".pdf,.docx">
+                    
+            </fieldset>
+            <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <label for="hear-course">Course / university</label>
+                    <input type="radio" id="hear-course" name="hear" value="course" required>
+                    <label for="hear-search">Search / web</label>
+                    <input type="radio" id="hear-search" name="hear" value="search">
+                    <label for="hear-other">Other</label>
+                    <input type="radio" id="hear-other" name="hear" value="other">
+            </fieldset>
+            <button type="submit">Send message</button>
+            </form>
+        </div>
+
+    <table border="1">
+        <caption>Messages Received</caption>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Message</th>
+            <th scope="col">Date</th>
+            <th scope="col">Priority</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td><a href="mailto:alice@gmail.com">alice@gmail.com</a></td>
+            <td>Hey! Just finished Lab 1!</td>
+            <td>01.01.2026</td>
+            <td><input type="checkbox" checked></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td rowspan="3">Bob</td>
+            <td rowspan="3"><a href="mailto:bob@e-uvt.ro">bob@e-uvt.ro</a></td>
+            <td>Hey, how's it going?</td>
+            <td>09.02.2026</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Do you know the deadline for Lab 3?</td>
+            <td>09.02.2026</td>
+            <td><input type="checkbox" checked></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Can someone share the example solution for Lab 2?</td>
+            <td>21.02.2026</td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+    </table>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="contact.js"></script>
+</body>
+</html>

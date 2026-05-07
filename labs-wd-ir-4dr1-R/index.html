@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Course homepage - Heading hierarchy example</title>
+  <link rel="stylesheet" href="style.css">
+   <style>
+    table.skill-display thead {
+        font-size: 0.8rem;
+        background-color: rgb(111, 49, 228);
+        
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My course homepage</h1>
+  </header>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="https://stefaniga.github.io/ewd-uvt-2026/lecture-1/">Course site</a></li>
+      <li><a href="https://stefaniga.github.io/ewd-uvt-2026/labs/">Resources</a></li>
+      <li><a href="contact.html">Contact</a> </li>
+      <li><a href="card.html">Personal Card</a></li>
+      <li><a href="cv.html">Curriculum Vitae</a></li>
+      <li><a href ="chatbot.html">Chatbot</a> </li>
+      <li><a href="universities.html">Universities in Romania</a> </li>
+    </ul>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>About me / Course goals</h2>
+      <p>My name is Vasiescu Adriana. I'm currently studying Computer Science. To be able to create beautiful designs for web pages by the end of this course.</p>
+    </section>
+    <section>
+      <h2>Photo</h2>
+      <img src="360_F_1259180121_rKxqQ3axerj2dqdNRu1DFFnIy3X4XsMe.jpg" alt="A decorative picture with an assortment of pastel pink flowers for a cozy vibe.">
+    </section>
+
+    <table class="skill-display">
+    <caption style="text-align: left;">Personal Skills</caption>
+    <thead>
+        <tr>
+            <th scope="col" colspan="3" style="background-color: #4c27a4; text-transform: uppercase; letter-spacing: 0.15em;">Personal Skills</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row" rowspan="3">Programming</th>
+            <td>Python</td>
+            <td style="background-color: #deffde; font-weight: bolder; color: darkgreen;">JavaScript</td>
+        </tr>
+        <tr>
+            <td>C/C++</td>
+            <td style="background-color: #ffd4d4; font-weight: bolder; color: darkred;">Java</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <th scope="row" rowspan="4">Design</th>
+            <td colspan="2">Figma</td>
+        </tr>
+        <tr>
+            <td colspan="2">Adobe XD</td>
+        </tr>
+        <tr>
+            <td colspan="2">Photoshop</td>
+        </tr>
+        <tr>
+            <td colspan="2">UI/UX</td>
+        </tr>
+        <tr>
+            <th scope="row">Other</th>
+            <td colspan="2">Git</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <table border="1">
+      <caption>Personal projects</caption>
+      <thead>
+        <tr>
+          <th scope="col">Project Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Technologies</th>
+          <th scope="col">Difficulty</th>
+          <th scope="col">Link</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Daily Schedule</td>
+          <td>A desktop app that helps organise activities and keep track of deadlines.</td>
+          <td>
+            <ul>
+              <li>Java</li>
+              <li>JavaFX</li>
+              <li>SQLite</li>
+              <li>Eclipse</li>
+            </ul>
+          </td>
+          <td>
+            <select name="difficulty">
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+          </td>
+          <td><a href="https://github.com/Programare-III-2025-2026/p3-proiect-gr8-4dr1-R.git">Link to Github</a></td>
+        </tr>
+        <tr>
+          <td>Student Log</td>
+          <td>A basic app that stores grades and information about student id's into local files.</td>
+          <td>
+            <ul>
+              <li>C++</li>
+              <li>Codeblocks</li>
+            </ul>
+          </td>
+          <td><select name="difficulty">
+                <option value="low" selected>Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+          </td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Online Library Administration</td>
+          <td>A series of SQL commands that creates and manipulates tables and data about books.</td>
+          <td>
+            <ul>
+              <li>SQL</li>
+              <li>Oracle</li>
+            </ul>
+          </td>
+          <td><select name="difficulty">
+                <option value="low" selected>Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+          </td>
+          <td>-</td>
+        </tr>
+
+      </tbody>
+
+  </table>
+
+  </main>
+  <footer>
+    <p>Adriana Vasiescu · Web Design · Semester 2</p>
+  </footer>
+</body>
+</html>

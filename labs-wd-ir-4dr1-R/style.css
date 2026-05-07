@@ -1,0 +1,123 @@
+h1.test{
+    color: #6dffce;
+   font-style:italic;
+   padding: 10px; 
+}
+
+
+.skill-display {
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    font-family:'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.skill-display thead tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+}
+
+.skill-display thead tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+}
+
+
+.skill-display th {
+    background-color: rgb(111, 49, 228);
+    color: aliceblue;
+    text-align: left;  
+    padding: 10px 50px 10px 15px; 
+    letter-spacing: 0.05em;
+}
+
+.skill-display tbody tr:nth-child(even) {
+    background-color: #f7f1ff;
+
+}
+
+.skill-display tbody td, .skill-display tbody th {
+    border-bottom: 1px solid #eee8ff;
+    padding: 10px 50px 10px 15px;     
+}
+
+.skill-display tbody th {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*styling for CV.HTML*/
+
+.cv-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.cv-container {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+    grid-template-areas: 
+        "header header"
+        "sidebar main";
+    grid-template-columns: 250px 1fr;
+}
+
+.profile { grid-area: header; background: #4c2c50; color: white; padding: 40px; border-radius: 8px; }
+.sidebar { grid-area: sidebar; background: #fff; padding: 20px; border-radius: 8px; }
+.projects-section { grid-area: main; }
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #a543c1;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.featured-card {
+    background: #bf56dd;
+    color: white;
+    border-left: 5px solid #9d25be;
+    transform: scale(1.02);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skill-tags span {
+    background: #e1e8ed;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.links {
+    color: #bf56dd;
+}
